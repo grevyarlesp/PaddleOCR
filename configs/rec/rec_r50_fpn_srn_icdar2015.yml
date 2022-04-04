@@ -57,8 +57,8 @@ Metric:
 
 Train:
   dataset:
-    name: LMDBDataSet
-    data_dir: ./train_data/icdar2015/text_recognition/train
+    name: ICDAR2015
+    data_dir: ./train_data/icdar2015/text_recognition
     label_file_list:
     - ./train_data/icdar2015/text_recognition/rec_gt_train.txt
     transforms:
@@ -84,8 +84,8 @@ Train:
 
 Eval:
   dataset:
-    name: LMDBDataSet
-    data_dir: ./train_data/icdar2015/text_recognition/test
+    name: ICDAR2015
+    data_dir: ./train_data/icdar2015/text_recognition
     label_file_list:
     - ./train_data/icdar2015/text_recognition/rec_gt_test.txt
     transforms:
