@@ -4,7 +4,7 @@ Global:
   log_smooth_window: 20
   print_batch_step: 5
   save_model_dir: /content/gdrive/MyDrive/rec/srn_new
-  save_epoch_step: 3
+  save_epoch_step: 100
   # evaluation is run every 5000 iterations after the 4000th iteration
   eval_batch_step: [0, 5000]
   cal_metric_during_train: True
@@ -58,7 +58,9 @@ Metric:
 Train:
   dataset:
     name: LMDBDataSet
-    data_dir: ./train_data/data_lmdb_release/training/
+    data_dir: ./train_data/icdar2015/text_recognition/train
+    label_file_list:
+    - ./train_data/icdar2015/text_recognition/rec_gt_train.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
@@ -83,7 +85,9 @@ Train:
 Eval:
   dataset:
     name: LMDBDataSet
-    data_dir: ./train_data/data_lmdb_release/validation/
+    data_dir: ./train_data/icdar2015/text_recognition/test
+    label_file_list:
+    - ./train_data/icdar2015/text_recognition/rec_gt_test.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
