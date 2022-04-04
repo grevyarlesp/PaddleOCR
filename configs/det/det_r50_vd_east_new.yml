@@ -2,7 +2,7 @@ Global:
   use_gpu: true
   epoch_num: 10000
   log_smooth_window: 20
-  print_batch_step: 2
+  print_batch_step: 100
   save_model_dir: /content/gdrive/MyDrive/east_r50_vd/
   save_epoch_step: 1000
   # evaluation is run every 5000 iterations after the 4000th iteration
