@@ -80,8 +80,8 @@ Train:
                       'gsrm_slf_attn_bias1',
                       'gsrm_slf_attn_bias2'] # dataloader will return list in this order
   loader:
-    shuffle: False
-    batch_size_per_card: 64
+    shuffle: True
+    batch_size_per_card: 16
     drop_last: False
     num_workers: 4
 
