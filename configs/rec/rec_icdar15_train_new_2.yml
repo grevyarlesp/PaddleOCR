@@ -8,7 +8,7 @@ Global:
   save_model_dir: /content/gdrive/MyDrive/rec/crnn_mobilenet_v3
   save_epoch_step: 3
   # evaluation is run every 2000 iterations
-  eval_batch_step: [0, 2000]
+  eval_batch_step: [0, 100]
   cal_metric_during_train: True
   pretrained_model:
   checkpoints:
@@ -34,7 +34,7 @@ Optimizer:
   regularizer:
     name: 'L2'
     # factor: 0.0000
-    factor: 0.0000
+    factor: 0.0001
 
 Architecture:
   model_type: rec
