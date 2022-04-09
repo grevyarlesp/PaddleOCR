@@ -2,7 +2,7 @@ Global:
   use_gpu: true
   epoch_num: 400
   log_smooth_window: 20
-  print_batch_step: 10
+  print_batch_step: 100
   # save_model_dir: ./output/rec/ic15/
 
   save_model_dir: /content/gdrive/MyDrive/rec/crnn_mobilenet_v3
