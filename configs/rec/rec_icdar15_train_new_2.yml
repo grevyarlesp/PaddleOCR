@@ -35,7 +35,7 @@ Optimizer:
   regularizer:
     name: 'L2'
     # factor: 0.0000
-    factor: 0.0001
+    factor: 0.000001
 
 Architecture:
   model_type: rec
